@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
 class myThemeData {
-  static const Color lighyColor = Color(0xffB7935F);
+  static const Color lightColor = Color(0xffB7935F);
 
   static ThemeData ligtTheme = ThemeData(
     scaffoldBackgroundColor: Colors.transparent,
 
-    primaryColor: lighyColor,
+    primaryColor: lightColor,
 
     appBarTheme: const AppBarTheme(
+      iconTheme: IconThemeData(color:lightColor),
       centerTitle: true,
       backgroundColor: Colors.transparent,
       elevation: 0.0,
@@ -18,12 +19,12 @@ class myThemeData {
       bodySmall: TextStyle(
         fontSize: 20,
         fontWeight: FontWeight.w600,
-        color: lighyColor,
+        color: lightColor,
       ),
       bodyMedium: TextStyle(
         fontSize: 25,
         fontWeight: FontWeight.bold,
-        color: lighyColor,
+        color: lightColor,
       ),
       bodyLarge: TextStyle(
         fontSize: 30,
@@ -33,7 +34,7 @@ class myThemeData {
     ),
 
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-      backgroundColor: lighyColor,
+      backgroundColor: lightColor,
       type: BottomNavigationBarType.fixed,
       
       selectedItemColor: Colors.black,

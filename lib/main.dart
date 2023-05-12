@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/homeScreen.dart';
 import 'package:islami/myTheme.dart';
+import 'package:islami/sura_content.dart';
 
 void main(){
   runApp(myApplication());
@@ -20,6 +21,7 @@ class myApplication extends StatelessWidget {
       initialRoute:homeScreen.RoutName ,
       routes: {
         homeScreen.RoutName:(context) => homeScreen(),
+        sura_content.RoutName:(context) => sura_content(),
 
       },
 
