@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/sura_args.dart';
 import 'package:islami/sura_content.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class quran extends StatelessWidget {
   List<String> suraNames = [
@@ -136,10 +137,9 @@ class quran extends StatelessWidget {
                 child: Text(
                   textAlign: TextAlign.center,
                   "Sura Name",
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyMedium!
-                      .copyWith(color: Colors.black),
+
+                  style:GoogleFonts.adventPro(color: Colors.black),
+
                 ),
               ),
               // Container(
@@ -177,8 +177,8 @@ class quran extends StatelessWidget {
                     },
                     child: Text(
                       textAlign: TextAlign.center,
-                      suraNames[index],
-                      style: TextStyle(color: Colors.black),
+                      " ${suraNames[index]}" ,
+                      style: GoogleFonts.arefRuqaa(color: Colors.black),
                     ),
                   ),
                 );

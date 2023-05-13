@@ -9,7 +9,7 @@ class myThemeData {
     primaryColor: lightColor,
 
     appBarTheme: const AppBarTheme(
-      iconTheme: IconThemeData(color:lightColor),
+      iconTheme: IconThemeData(color:lightColor,size: 30),
       centerTitle: true,
       backgroundColor: Colors.transparent,
       elevation: 0.0,

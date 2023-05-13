@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:islami/taps/ahadeth.dart';
 import 'package:islami/myTheme.dart';
 import 'package:islami/taps/quran.dart';
@@ -28,7 +29,7 @@ class _homeScreenState extends State<homeScreen> {
             )),
         Scaffold(
           appBar: AppBar(
-            title: Text("islami", style: Theme.of(context).textTheme.bodyLarge),
+            title: Text("islami", style: GoogleFonts.adventPro(color: Colors.black,fontSize: 35,fontWeight: FontWeight.bold)),
           ),
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: index,
