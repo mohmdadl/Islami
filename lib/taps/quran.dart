@@ -168,7 +168,7 @@ class quran extends StatelessWidget {
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) {
-                // final sura = suraNames[index];
+
                 return Expanded(
                   child: InkWell(
                     onTap: (){
