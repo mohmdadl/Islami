@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:islami/hadeth_args.dart';
 import 'package:islami/hadeth_content.dart';
 
 class ahadeth extends StatelessWidget {
 
-  List<String> suraNames = [
+  List<String> hadeyhNames = [
     "حديث رقم 1",
     "حديث رقم 2",
     "حديث رقم 3",
@@ -93,17 +94,17 @@ class ahadeth extends StatelessWidget {
                   child: InkWell(
                     onTap: (){
 
-                      Navigator.pushNamed(context,hadeth_content.RoutName,arguments: hadeth_args(suraName: hadethNames[index], index: index));
+                      Navigator.pushNamed(context,hadeth_content.RoutName,arguments:hadeth_args(hadethName: hadeyhNames[index], index: index));
                     },
                     child: Text(
                       textAlign: TextAlign.center,
-                      " ${suraNames[index]}" ,
-                      style: GoogleFonts.arefRuqaa(color: Colors.black),
+                      " ${hadeyhNames[index]}" ,
+                      style: GoogleFonts.quicksand(color: Colors.black),
                     ),
                   ),
                 );
               },
-              itemCount: suraNames.length,
+              itemCount: hadeyhNames.length,
             ),
           ),
         ],
