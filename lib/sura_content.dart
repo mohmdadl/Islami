@@ -22,14 +22,16 @@ class _sura_contentState extends State<sura_content> {
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/main_bg.png"),
+              image: AssetImage(Brightness.light==Theme.of(context).brightness?
+              "assets/images/main_bg.png"
+              :"assets/images/bg.png",),
               fit: BoxFit.fill)),
       child: Scaffold(
         appBar: AppBar(
           toolbarHeight: MediaQuery.of(context).size.height*0.11,
             title: Text(
           sura.suraName,
-          style: GoogleFonts.arefRuqaa(color:Colors.black87,fontSize: 40),
+          style: Theme.of(context).textTheme.bodyLarge,
         )),
         body: VersesList.isEmpty
             ? Center(child: CircularProgressIndicator())
@@ -45,7 +47,7 @@ class _sura_contentState extends State<sura_content> {
                       padding: const EdgeInsets.symmetric(horizontal: 14),
                       child: Text(
                         "(${index + 1}) ${VersesList[index]}",
-                        style: GoogleFonts.elMessiri(fontSize: 20,color: Color(0xff242424)),
+                        style: Theme.of(context).textTheme.bodySmall,
                         textAlign: TextAlign.center,
                         textDirection: TextDirection.ltr,
                       ),

@@ -66,7 +66,9 @@ class ahadeth extends StatelessWidget {
           Image.asset("assets/images/hadeth.png"),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+             color: Brightness.light == Theme.of(context).brightness
+                  ? Color(0xffB7935F)
+                  :Color(0xfffFACC1D),
           ),
           Row(
             children: [
@@ -75,7 +77,7 @@ class ahadeth extends StatelessWidget {
                   textAlign: TextAlign.center,
                   "الأحاديث ",
 
-                  style:GoogleFonts.adventPro(color: Colors.black),
+                  style:Theme.of(context).textTheme.bodyMedium,
 
                 ),
               ),
@@ -84,7 +86,9 @@ class ahadeth extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+             color: Brightness.light == Theme.of(context).brightness
+                  ? Color(0xffB7935F)
+                  :Color(0xfffFACC1D),
           ),
           Expanded(
             child: ListView.builder(
@@ -99,7 +103,7 @@ class ahadeth extends StatelessWidget {
                     child: Text(
                       textAlign: TextAlign.center,
                       " ${hadeyhNames[index]}" ,
-                      style: GoogleFonts.quicksand(color: Colors.black),
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ),
                 );

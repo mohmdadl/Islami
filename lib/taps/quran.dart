@@ -129,7 +129,9 @@ class quran extends StatelessWidget {
           Image.asset("assets/images/quran_pg.png"),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+            color: Brightness.light == Theme.of(context).brightness
+                  ? Color(0xffB7935F)
+                  :Color(0xfffFACC1D),
           ),
           Row(
             children: [
@@ -138,7 +140,7 @@ class quran extends StatelessWidget {
                   textAlign: TextAlign.center,
                   "Sura Name",
 
-                  style:GoogleFonts.adventPro(color: Colors.black),
+                  style:Theme.of(context).textTheme.bodyMedium,
 
                 ),
               ),
@@ -163,7 +165,9 @@ class quran extends StatelessWidget {
           ),
           Divider(
             thickness: 2,
-            color: Theme.of(context).primaryColor,
+           color: Brightness.light == Theme.of(context).brightness
+                  ? Color(0xffB7935F)
+                  :Color(0xfffFACC1D),
           ),
           Expanded(
             child: ListView.builder(
@@ -178,7 +182,7 @@ class quran extends StatelessWidget {
                     child: Text(
                       textAlign: TextAlign.center,
                       " ${suraNames[index]}" ,
-                      style: GoogleFonts.arefRuqaa(color: Colors.black),
+                      style: Theme.of(context).textTheme.bodyMedium,
                     ),
                   ),
                 );
