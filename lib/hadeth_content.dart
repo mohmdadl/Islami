@@ -31,11 +31,12 @@ class _hadeth_contentState extends State<hadeth_content> {
               ),
               fit: BoxFit.fill)),
       child: Scaffold(
+
         appBar: AppBar(
             toolbarHeight: MediaQuery.of(context).size.height * 0.11,
             title: Text(
               theHadeth.hadethName,
-              style: GoogleFonts.arefRuqaa(color: Colors.black87, fontSize: 40),
+              style: Theme.of(context).textTheme.bodyLarge,
             )),
         body: hadethsList.isEmpty
             ? Center(child: CircularProgressIndicator())

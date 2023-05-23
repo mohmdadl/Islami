@@ -28,18 +28,19 @@ class myThemeData {
     textTheme: const TextTheme(
       
       bodySmall: TextStyle(
-        fontSize: 20,
+        fontSize: 25,
         fontWeight: FontWeight.w600,
         color: lightColor,
         
       ),
       bodyMedium: TextStyle(
-        fontSize: 25,
+        fontSize: 32,
         fontWeight: FontWeight.bold,
         color: Colors.black54,
+        fontFamily: 'ArefRuqaa',
       ),
       bodyLarge: TextStyle(
-        fontSize: 30,
+        fontSize: 40,
         fontWeight: FontWeight.w600,
         color: Colors.black,
          fontFamily: 'ArefRuqaa',
@@ -86,19 +87,22 @@ class myThemeData {
 
     textTheme: const TextTheme(
       bodySmall: TextStyle(
-        fontSize: 20,
+        fontSize: 25,
         fontWeight: FontWeight.w600,
         color: yColor,
+        
       ),
       bodyMedium: TextStyle(
-        fontSize: 25,
+        fontSize: 32,
         fontWeight: FontWeight.bold,
         color: Colors.white,
+        fontFamily: 'ArefRuqaa',
       ),
       bodyLarge: TextStyle(
-        fontSize: 30,
+        fontSize: 40,
         fontWeight: FontWeight.w600,
         color: Colors.white,
+        fontFamily: 'ArefRuqaa',
       ),
     ),
 
