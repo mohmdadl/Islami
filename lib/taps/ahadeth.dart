@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:islami/hadeth_args.dart';
 import 'package:islami/hadeth_content.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ahadeth extends StatelessWidget {
 
@@ -75,7 +76,7 @@ class ahadeth extends StatelessWidget {
               Expanded(
                 child: Text(
                   textAlign: TextAlign.center,
-                  "الأحاديث ",
+                 AppLocalizations.of(context)!.ahadeth,
 
                   style:Theme.of(context).textTheme.bodyMedium,
 

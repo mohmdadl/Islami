@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami/sura_args.dart';
 import 'package:islami/sura_content.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class quran extends StatelessWidget {
   List<String> suraNames = [
@@ -138,7 +139,7 @@ class quran extends StatelessWidget {
               Expanded(
                 child: Text(
                   textAlign: TextAlign.center,
-                  "Sura Name",
+                  AppLocalizations.of(context)!.sura_name,
 
                   style:Theme.of(context).textTheme.bodyMedium,
 

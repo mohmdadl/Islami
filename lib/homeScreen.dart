@@ -7,6 +7,7 @@ import 'package:islami/taps/quran.dart';
 import 'package:islami/taps/radio.dart';
 import 'package:islami/taps/sebha.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class homeScreen extends StatefulWidget {
   static const String RoutName = "home";
@@ -44,18 +45,18 @@ class _homeScreenState extends State<homeScreen> {
                         ? Color(0xffB7935F)
                         : Color.fromARGB(255, 9, 55, 88),
                   ),
-                  child: Text('Islami App',
+                  child: Text(AppLocalizations.of(context)!.appTitle,
                       style: Theme.of(context).textTheme.bodyLarge),
                 ),
                 ExpansionTile(
-                  title: Text('Theames',
+                  title: Text(AppLocalizations.of(context)!.theames,
                       style: Theme.of(context).textTheme.bodyMedium),
                   children: [
                     TextButton(
                       onPressed: () {
                         provider.Changetheme(ThemeMode.dark);
                       },
-                      child: Text("Dark Mode",
+                      child: Text(AppLocalizations.of(context)!.darkMode,
                           style: Theme.of(context).textTheme.bodySmall),
                     ),
                     SizedBox(
@@ -65,7 +66,7 @@ class _homeScreenState extends State<homeScreen> {
                       onPressed: () {
                         provider.Changetheme(ThemeMode.light);
                       },
-                      child: Text("Light Mode",
+                      child: Text(AppLocalizations.of(context)!.lightmode,
                           style: Theme.of(context).textTheme.bodySmall),
                     ),
                     SizedBox(
@@ -74,20 +75,24 @@ class _homeScreenState extends State<homeScreen> {
                   ],
                 ),
                 ExpansionTile(
-                  title: Text('Languages',
+                  title: Text(AppLocalizations.of(context)!.languages,
                       style: Theme.of(context).textTheme.bodyMedium),
                   children: [
                     TextButton(
-                      onPressed: () {},
-                      child: Text("Arabic",
+                      onPressed: () {
+                        provider.ChangeLanguage("ar");
+                      },
+                      child: Text(AppLocalizations.of(context)!.arabic,
                           style: Theme.of(context).textTheme.bodySmall),
                     ),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.04,
                     ),
                     TextButton(
-                      onPressed: () {},
-                      child: Text("English",
+                      onPressed: () {
+                        provider.ChangeLanguage("en");
+                      },
+                      child: Text(AppLocalizations.of(context)!.english,
                           style: Theme.of(context).textTheme.bodySmall),
                     ),
                     SizedBox(
@@ -99,7 +104,7 @@ class _homeScreenState extends State<homeScreen> {
             ),
           ),
           appBar: AppBar(
-            title: Text("islami", style: Theme.of(context).textTheme.bodyLarge),
+            title: Text(AppLocalizations.of(context)!.appTitle, style: Theme.of(context).textTheme.bodyLarge),
           ),
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: index,
@@ -110,17 +115,17 @@ class _homeScreenState extends State<homeScreen> {
             items: [
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage("assets/images/quraan.png")),
-                  label: "Quran"),
+                  label: AppLocalizations.of(context)!.quran),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage("assets/images/ahadeth.png")),
-                  label: "ahadeth"),
+                  label: AppLocalizations.of(context)!.ahadeth),
               BottomNavigationBarItem(
                   icon: ImageIcon(AssetImage("assets/images/sebha.png")),
-                  label: "sebha"),
+                  label: AppLocalizations.of(context)!.sebha),
               BottomNavigationBarItem(
                   // backgroundColor: myThemeData.lighyColor,
                   icon: ImageIcon(AssetImage("assets/images/radio.png")),
-                  label: "radio"),
+                  label: AppLocalizations.of(context)!.radio),
             ],
           ),
           body: taps[index],
