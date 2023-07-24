@@ -10,5 +10,7 @@
   "lightmode":"الوضع الفاتح",
   "languages":"اللغات",
   "english":"الإنجليزية",
-  "arabic":"العربية"
+  "arabic":"العربية",
+  "numOfTasbeh":"عدد التسبيحات",
+  "theradio":"إذاعة القرآن الكريم"
 }

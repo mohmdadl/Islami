@@ -100,11 +100,22 @@ class _homeScreenState extends State<homeScreen> {
                     ),
                   ],
                 ),
+                SizedBox(height: MediaQuery.of(context).size.height * 0.04),
+                Text(
+                  "  Created by :\n  Mohamed Adel",
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Brightness.light == Theme.of(context).brightness
+                        ? Color(0xffB7935F)
+                        : Color.fromARGB(255, 9, 55, 88),
+                  ),
+                )
               ],
             ),
           ),
           appBar: AppBar(
-            title: Text(AppLocalizations.of(context)!.appTitle, style: Theme.of(context).textTheme.bodyLarge),
+            title: Text(AppLocalizations.of(context)!.appTitle,
+                style: Theme.of(context).textTheme.bodyLarge),
           ),
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: index,

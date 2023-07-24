@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:islami/hadeth_args.dart';
 import 'package:islami/hadeth_content.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

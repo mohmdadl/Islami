@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class myThemeData {
   static const Color lightColor = Color(0xffB7935F);
+  static const Color AlightColor = Color(0xffB7935F);
+
   static const Color laban = Color(0xffEAE9E9);
 
   static const Color darkColor = Color(0xff141A2E);
