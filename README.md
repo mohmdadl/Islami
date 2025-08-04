@@ -1,60 +1,42 @@
 Islami App 🕌
-تطبيق إسلامي بسيط يهدف إلى مساعدة المسلمين في ممارسة عباداتهم اليومية بسهولة.
-التطبيق مبني باستخدام Flutter ويتميز بتصميم بسيط وتجربة مستخدم سلسة.
+A simple Islamic application designed to help Muslims easily practice their daily worship.
+The app is built using Flutter and offers a clean design with a smooth user experience.
 
 Features ✨
-قراءة القرآن الكريم 📖
+Read the Holy Qur’an 📖
 
-الاستماع للآيات بصوت واضح 🎧
+Listen to verses with clear audio 🎧
 
-قسم الأحاديث النبوية 📜
+A dedicated section for authentic Hadiths 📜
 
-عرض الأذكار اليومية وأذكار الصباح والمساء 💬
+Daily Azkar, including morning and evening supplications 💬
 
-واجهة استخدام باللغة العربية.
+Fully Arabic user interface 🌐
 
 Technologies Used 🛠️
-Flutter: لتطوير واجهة المستخدم.
+Flutter – For building the user interface
 
-Dart: لغة البرمجة.
+Dart – The programming language used
 
-Assets (Local Audio & Text): لإتاحة الوصول إلى المحتوى دون إنترنت.
+Local Assets (Audio & Text) – Allows offline access to content
 
-Provider / Cubit (إذا كنت مستخدمًا لأحدهم): لإدارة الحالة (state management).
+Provider / Cubit – For state management (depending on the one used)
+
 
 🖼️ Screenshots
-الصفحة الرئيسية
-<img src="screenshots/home.jpg" alt="Home Page" width="120"/>
-صفحة القرآن الكريم
-<img src="screenshots/quran.jpg" alt="Quran Page" width="120"/>
-صفحة الأحاديث
-<img src="screenshots/hadith.jpg" alt="Hadith Page" width="120"/>
-صفحة الأذكار
-<img src="screenshots/azkar.jpg" alt="Azkar Page" width="120"/>
-Installation 🚀
-Clone the repository:
+Quran
+<img src="screenShots/quran.jpg" alt="Quran Page" width="120"/>
+Ahadith
+<img src="screenShots/ahadeth.jpg" alt="Hadith Page" width="120"/>
+Azkar
+<img src="screenShots/azkar.jpg" alt="Azkar Page" width="120"/>
 
-bash
-Copy
-Edit
-git clone https://github.com/mohmdadl/Islami.git
-Navigate to the project directory:
 
-bash
-Copy
-Edit
-cd Islami
-Get the dependencies:
+## Installation 🚀
 
-bash
-Copy
-Edit
-flutter pub get
-Run the app:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohmdadl/weather_app.git
 
-bash
-Copy
-Edit
-flutter run
-Contributing 🤝
-ساهم بأفكارك أو تحسيناتك عبر Pull Requests، وشارك في تطوير هذا التطبيق الخيري.
+## Contributing 🤝
+*Feel free to submit pull requests to improve the project.*
